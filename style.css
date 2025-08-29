@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #DF551E;
+  color: #FFF3ED;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+color:#524A46;
+text-decoration: none;
+transition: all ease 1s;
+}
+
+a[href$=".pdf"]{
+  color: #732D11;
+}
+
+a:hover{
+  color: #11736E;
+  text-decoration: underline;
+  transition: all ease 1s;
+}
+
+a:hover:after{
+  content: "✨";
+}
+
+h1{
+  font-size: calc(2rem + 5vw);
+}
+
+#bloque{
+  margin:5rem;
+  padding: 1rem;
+  background: rgba(255,243,237,.2);
+  border-radius: 1rem;
+  box-shadow: 0 0 50px #FFF3ED;
+}
+
+
+.xmas {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  /*font-size: 220%;*/
+}
+
+.ajuste{
+  font-size:100%;
+}
+/*
+canvas {
+  display: block;
+}
+*/
+
+#bloque {
+    position: absolute;
+    left: 50%; /*este % es el tamaño de la pantalla*/
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80% - 4rem); /*el 80% - 4 rem, rem es una unidad de medida*/
+    margin: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.3); /*el utlimo es la opacidad*/
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+
