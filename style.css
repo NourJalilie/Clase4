@@ -24,6 +24,20 @@ a[href$=".pdf"]{
   color: #732D11;
 }
 
+.ajuste{
+  font-size:100%;
+}
+
+.xmas {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  /*font-size: 220%;*/
+}
+
 .especial:hover{
   color: #FFF3ED;
   text-decoration: underline;
@@ -71,17 +85,6 @@ p {
   box-shadow: 0 0 50px #FFF3ED;
 }*/
 
-
-.xmas {
-  font-family: "DynaPuff", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-  /*font-size: 220%;*/
-}
-
 .xmas2 {
   font-size: 40px;
   margin-bottom: 40px;
@@ -90,10 +93,6 @@ p {
 .otra {
   font-family:"DynaPuff", system-ui ;
   color:#FFF3ED;
-}
-
-.ajuste{
-  font-size:100%;
 }
 
 #cuerpo2 {
