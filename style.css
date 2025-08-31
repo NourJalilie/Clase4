@@ -1,57 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Sora:wght@100..800&display=swap');
 
 html, body {
   margin: 0;
   padding: 0;
-  background: #DF551E;
+  /*background: #DF551E;*/
   color: #FFF3ED;
-  font-family: Helvetica, Arial, sans-serif;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  font-family: "Sora", sans-serif;;
+}
+
+#cuerpo {
+  *background: #DF551E;
 }
 
 a{
-color:#524A46;
+color:#732D11;
 text-decoration: none;
-transition: all ease 1s;
+transition: all ease 1.5s;
 }
 
 a[href$=".pdf"]{
   color: #732D11;
 }
 
-a:hover{
-  color: #11736E;
+.especial:hover{
+  color: #FFF3ED;
   text-decoration: underline;
-  transition: all ease 1s;
+  transition: all ease 1.5s;
+  font-family: "DynaPuff", system-ui;
 }
 
-a:hover:after{
-  content: "✨";
+.especial:hover:after{
+  content: "ヽ(・∀・)ﾉ";
+}
+
+.pag:hover{
+  color: #FFF3ED;
+  transition: all ease 1.5s;
+  font-family: "DynaPuff", system-ui;
+}
+
+.pag:hover:after{
+  content: "( ･_･)っ";
 }
 
 h1{
-  font-size: calc(2rem + 5vw);
+  font-size: calc(2rem + 4vw);
+  margin-bottom:10px;
+  margin-top:10px;
 }
 
-#bloque{
+h2 {
+  font-family: "DynaPuff", system-ui;
+  font-size: 30px;
+  /*line-height: 100px*/
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+/*#bloque{
   margin:5rem;
   padding: 1rem;
   background: rgba(255,243,237,.2);
   border-radius: 1rem;
   box-shadow: 0 0 50px #FFF3ED;
-}
+}*/
 
 
 .xmas {
-  font-family: "Sora", sans-serif;
+  font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   /*font-size: 220%;*/
+}
+
+.xmas2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.otra {
+  font-family:"DynaPuff", system-ui ;
+  color:#FFF3ED;
 }
 
 .ajuste{
   font-size:100%;
 }
+
+#cuerpo2 {
+  background: #FFF3ED;
+}
+
+#bloque2{
+  position: absolute;
+  left: 50%; /*este % es el tamaño de la pantalla*/
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(80% - 30rem); /*el 80% - 4 rem, rem es una unidad de medida*/
+  margin: auto;
+  padding: 4rem;
+  background: rgba(223, 85, 30, 1); /*el utlimo es la opacidad*/
+  border-radius: 5rem;
+  box-shadow: 5px 5px 20px #524A46;
+  z-index: 9999;
+}
+
 /*
 canvas {
   display: block;
@@ -63,12 +125,12 @@ canvas {
     left: 50%; /*este % es el tamaño de la pantalla*/
     top: 50%;
     transform: translate(-50%, -50%);
-    width: calc(80% - 4rem); /*el 80% - 4 rem, rem es una unidad de medida*/
+    width: calc(80% - 30rem); /*el 80% - 4 rem, rem es una unidad de medida*/
     margin: auto;
-    padding: 2rem;
+    padding: 4rem;
     background: rgba(255, 255, 255, 0.3); /*el utlimo es la opacidad*/
-    border-radius: 1rem;
-    box-shadow: 0 0 30px white;
+    border-radius: 5rem;
+    box-shadow: 0 0 80px #FFF3ED;
     z-index: 9999;
 }
 

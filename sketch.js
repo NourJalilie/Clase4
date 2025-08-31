@@ -17,17 +17,17 @@ function setup() {
   mesa.position(0,0); /* el 0,0 es la esquina entonces parte desde ahi y sigue la instruccion de q sea del tamaño de la pantalla*/
   mesa.style('z-index','-1'); /*aca el -1 es que lo tiro para atras*/
   noStroke();
-  frameRate(10);
+  frameRate(8);
 }
 
 function draw() {
   /*background(map(mouseX, windowWidth, 255, 0, 200), 85, 30);*/
-  colorMode(HSB,359,100,100)
-  background(map(mouseX, 0, windowWidth, 180, 223), 30,map(mouseY, 0, windowHeight, 60, 85));
+  colorMode(HSB,200,200,200) /*aca va 359,100,100 pero estoy experimentando, es tono (0-360), saturación y brillo en %*/
+  background(map(mouseX, 0, windowWidth, -6, 24), 174,map(mouseY, 0, windowHeight, 140, 200));
   x = lerp(x, mouseX, 1.1); /* el numero puede q sea el eje en el q esta*/
   y = lerp(y, mouseY, 1.1);
   fill("white");
-  textSize(random(50,100));
+  textSize(random(30,60));
   text("🐡",x,y);
 }
 
